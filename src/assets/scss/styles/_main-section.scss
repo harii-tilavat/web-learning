@@ -1,0 +1,38 @@
+.main-section {
+  padding: 35px 0px;
+  .nug-section-title {
+    gap: 15px;
+    .nug-sub-title {
+      font-size: 3.5em;
+      transition: 0.2s;
+    }
+  }
+  .news-letter {
+    .form-control {
+      height: $btn-max-height;
+    }
+  }
+  .trust-by-team {
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (max-width: 775px) {
+  .main-section {
+    .nug-section-title {
+      .nug-sub-title {
+        font-size: 2.5em;
+      }
+    }
+    .trust-by-team {
+      ul {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

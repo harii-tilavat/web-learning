@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainSectionComponent } from './main-section/main-section.component';
+import { TeamsLogoComponent } from './teams-logo/teams-logo.component';
 
 
 
@@ -10,7 +11,8 @@ import { MainSectionComponent } from './main-section/main-section.component';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    MainSectionComponent
+    MainSectionComponent,
+    TeamsLogoComponent
   ],
   imports: [
     CommonModule
