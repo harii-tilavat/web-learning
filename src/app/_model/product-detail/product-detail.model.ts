@@ -1,4 +1,4 @@
-export class ContentListModel{
+export class ProductDetailModel{
   id!:number;
   title!:string;
   subTitle!:string;

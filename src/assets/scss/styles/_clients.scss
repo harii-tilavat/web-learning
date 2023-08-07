@@ -1,0 +1,28 @@
+.section-clients {
+  background-color: red;
+  .card {
+    color: inherit;
+    margin-top: 20px;
+    padding: 30px;
+    .card-body {
+      padding: 0;
+      .card-image {
+        .image {
+          height: 70px;
+          width: 70px;
+          background: $gray-100;
+          padding: 20px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .card-footer {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      .title {
+        font-weight: bold;
+      }
+    }
+  }
+}

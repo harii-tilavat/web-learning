@@ -1,8 +1,8 @@
-<div class="content-info" *ngFor="let item of contentList; let i=index" [ngClass]="{'light':i%2===0}">
+<div class="product-detail" *ngFor="let item of contentList; let i=index" [ngClass]="{'light':i%2===0}">
   <div class="container">
     <div class="row" [ngClass]="{'reverse':i%2==0 }">
       <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-md-0 mt-5">
-        <div class="nug-section-title">
+        <div class="nug-section-title text-start">
           <div class="nug-title">
             <span>{{item.title}}</span>
           </div>
@@ -18,10 +18,10 @@
         </div>
       </div>
       <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="site-image">
+        <div class="product-image">
           <div class="image">
             <span>
-              <img [src]="'/assets/svgs/Placeholderimage.svg'" alt="" class="img-fluid">
+              <img [src]="item.imagepath" alt="" class="img-fluid">
             </span>
           </div>
         </div>
