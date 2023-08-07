@@ -1,9 +1,17 @@
 .nug-section-title {
   display: flex;
   flex-flow: column;
+  gap: 15px;
   .nug-title {
-    background-color: $gray-200;
-    color: $gray-600;
+    span {
+      background-color: $gray-200;
+      color: $gray-600;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      font-size: 0.9em;
+      border-radius: 3px;
+      font-weight: 500;
+    }
   }
   .nug-sub-title {
     font-weight: bold;
@@ -16,17 +24,19 @@
 }
 
 .nug-button {
+  button {
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 0px 20px;
+    height: $btn-max-height;
+  }
   .btn-main {
     background-color: $gray-800;
     color: white;
-    font-weight: 400;
-    height: $btn-max-height;
   }
   .btn-outline-main {
     border: 1px solid $gray-800;
     color: $gray-800;
-    font-weight: 400;
-    height: $btn-max-height;
   }
 }
 .d-flex-center {
@@ -40,4 +50,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.home-content {
+  .site-section {
+    padding: 40px 0px;
+  }
 }

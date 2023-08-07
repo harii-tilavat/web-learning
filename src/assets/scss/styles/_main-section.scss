@@ -1,5 +1,11 @@
 .main-section {
-  padding: 35px 0px;
+  min-height: calc(100vh - $header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .row {
+    margin-bottom: 30px;
+  }
   .nug-section-title {
     gap: 15px;
     .nug-sub-title {
@@ -13,12 +19,25 @@
     }
   }
   .trust-by-team {
+    .nug-section-title {
+      font-size: 1.2em;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 20px 0;
+      font-weight: 500;
+    }
     ul {
       list-style-type: none;
       display: flex;
       flex-flow: row;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      .client-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
@@ -27,11 +46,6 @@
     .nug-section-title {
       .nug-sub-title {
         font-size: 2.5em;
-      }
-    }
-    .trust-by-team {
-      ul {
-        flex-wrap: wrap;
       }
     }
   }
