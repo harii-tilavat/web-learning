@@ -1,3 +1,26 @@
-.content-help{
-  background-color: red;
+.section-help {
+  .card {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    .card-body {
+      .card-image {
+        margin: auto;
+        min-height: 250px;
+        min-width: 250px;
+        background: $gray-50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .card-footer {
+      border: none;
+      background-color: transparent;
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
 }

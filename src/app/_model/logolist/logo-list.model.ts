@@ -1,5 +1,5 @@
 export class LogoListModel{
     id!:number;
-    logoPath!:any;
+    icon!:any;
     title!:string;
 }
