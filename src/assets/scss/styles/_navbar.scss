@@ -7,16 +7,18 @@
       mix-blend-mode: exclusion;
     }
   }
-  .navbar-toggler {
+  .navbar-toggler, .navbar-toggler:focus {
     color: $gray-800;
     font-size: 1em;
     border: none;
+    box-shadow: none;
   }
   .navbar-content {
     .nav-link,
     .drop-down-link {
       color: $gray-800;
       cursor: pointer;
+      font-weight: $font-medium;
     }
   }
 }

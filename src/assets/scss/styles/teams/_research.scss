@@ -1,0 +1,18 @@
+.research-section{
+  .nug-section-title{
+    .nug-title.title-bold{
+      span{
+        display: block;
+        background-color: $gray-100;
+        text-transform: none;
+        font-weight: $font-dark;
+        // background-color: red;
+      }
+    }
+  }
+  .discussion{
+    .discussion-info:nth-child(1){
+      margin-bottom: 30px;
+    }
+  }
+}

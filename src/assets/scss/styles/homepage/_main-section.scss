@@ -20,11 +20,10 @@
   }
   .trust-by-team {
     .nug-section-title {
-      font-size: 1.2em;
       text-align: center;
       text-transform: uppercase;
       margin: 20px 0;
-      font-weight: 500;
+      font-weight: $font-medium;
     }
     ul {
       list-style-type: none;
@@ -37,6 +36,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 200px;
+        height: 80px;
       }
     }
   }

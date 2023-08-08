@@ -1,0 +1,19 @@
+.footer{
+  background-color: $gray-600;
+  color: white;
+  padding: $section-padding;
+  .footer-title{
+    margin-top: 10px;
+  }
+  .footer-list{
+    list-style: none;
+    padding: 0;
+    li{
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+  .form-control{
+    height: $btn-max-height;
+  }
+}

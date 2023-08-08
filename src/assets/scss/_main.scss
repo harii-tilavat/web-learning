@@ -1,8 +1,16 @@
-
+// Shared Styles
 @import "./styles/variables";
-@import "./styles/navbar";
-@import "./styles/main-section";
-@import "./styles/nug-content";
-@import "./styles/nug-help";
-@import "./styles/clients";
+@import "./styles/footer";
 @import "./styles/shared";
+@import "./styles/navbar";
+
+// Home page Styles
+@import "./styles/homepage/main-section";
+@import "./styles/homepage/product-detail";
+@import "./styles/homepage/nug-help";
+@import "./styles/homepage/clients";
+
+// Teams Page styles
+@import "./styles/teams/research";
+@import "./styles/teams/benefit";
+

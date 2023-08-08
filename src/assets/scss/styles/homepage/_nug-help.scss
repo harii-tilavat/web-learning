@@ -6,20 +6,34 @@
     .card-body {
       .card-image {
         margin: auto;
-        min-height: 250px;
-        min-width: 250px;
+        height: 250px;
+        width: 250px;
         background: $gray-50;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 35px;
+        border-radius: 20px;
       }
     }
     .card-footer {
       border: none;
       background-color: transparent;
       .title {
-        font-weight: bold;
+        font-weight: $font-dark;
         font-size: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width:775px) {
+  .section-help {
+    .card {
+      .card-body {
+        .card-image {
+          height: 120px;
+          width: 120px;
+        }
       }
     }
   }
