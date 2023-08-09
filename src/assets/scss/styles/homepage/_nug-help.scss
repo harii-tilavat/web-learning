@@ -6,8 +6,7 @@
     .card-body {
       .card-image {
         margin: auto;
-        height: 250px;
-        width: 250px;
+        aspect-ratio: 1/1;
         background: $gray-50;
         display: flex;
         justify-content: center;
@@ -22,18 +21,6 @@
       .title {
         font-weight: $font-dark;
         font-size: 20px;
-      }
-    }
-  }
-}
-@media only screen and (max-width:775px) {
-  .section-help {
-    .card {
-      .card-body {
-        .card-image {
-          height: 120px;
-          width: 120px;
-        }
       }
     }
   }
