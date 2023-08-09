@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuListModel } from 'src/app/_model/menulist/menu-list.model';
 
 @Component({
@@ -64,8 +65,10 @@ export class NavbarComponent implements OnInit {
       subMenu: []
     },
   ]
-  constructor() { }
+  constructor(private router:Router) { }
   ngOnInit(): void {
   }
-
+  onStartQuiz():void{
+    this.router.navigate(['/quiz']);
+  }
 }

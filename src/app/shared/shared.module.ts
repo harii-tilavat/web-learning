@@ -4,6 +4,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { TeamsLogoComponent } from './teams-logo/teams-logo.component';
+import { QuestionComponent } from './question/question.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -12,15 +14,18 @@ import { TeamsLogoComponent } from './teams-logo/teams-logo.component';
     NavbarComponent,
     FooterComponent,
     MainSectionComponent,
-    TeamsLogoComponent
+    TeamsLogoComponent,
+    QuestionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
-    MainSectionComponent
+    MainSectionComponent,
+    QuestionComponent
   ]
 })
 export class SharedModule { }
