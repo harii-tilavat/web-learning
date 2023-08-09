@@ -1,0 +1,33 @@
+<div class="product-detail" *ngFor="let item of contentList; let i=index" [ngClass]="{'light':i%2===0}">
+  <div class="container">
+    <div class="row" [ngClass]="{'reverse':i%2==1 }">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-md-0 mt-5">
+        <div class="product-content">
+          <div class="nug-section-title text-start">
+            <div class="nug-title">
+              <span>{{item.title}}</span>
+            </div>
+            <div class="nug-sub-title">
+              <span>{{item.subTitle}}</span>
+            </div>
+            <div class="nug-desc">
+              <span>{{item.desc}}</span>
+            </div>
+            <div class="nug-button">
+              <button type="button" class="btn btn-main">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="product-image">
+          <div class="image">
+            <span>
+              <img [src]="item.imagepath" alt="" class="img-fluid">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

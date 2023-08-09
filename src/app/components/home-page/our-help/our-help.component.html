@@ -1,1 +1,41 @@
-<p>our-help works!</p>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="nug-section-title text-start text-md-center">
+        <div class="nug-title">
+          <span>Who we Help</span>
+        </div>
+        <div class="nug-sub-title">
+          <span>Teams of all Shapes and Size</span>
+        </div>
+        <div class="nug-desc">
+          <span>The one-stop toolkit for Researchers, Designers and PMs to generate deeper user insights, 10x
+            faster</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6" *ngFor="let item of helpList">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-image">
+            <div class="image">
+              <span>
+                <img [src]="item.icon" alt="" class="img-fluid">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="title">
+            <span>{{item.title}}</span>
+          </div>
+          <div class="sub-title">
+            <span>{{item.desc}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

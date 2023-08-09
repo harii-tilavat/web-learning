@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="nug-section-title">
+        <div class="nug-title">
+          <span>What clients say</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12 " *ngFor="let item of tesimonialList">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-image">
+            <div class="image">
+              <span><img [src]="item.imagePath" alt="testimonial" class="img-fluid"></span>
+            </div>
+          </div>
+          <div class="image-content">
+            <p>{{item.desc}}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="title">
+            <span>{{item.title}}</span>
+          </div>
+          <div class="sub-title">
+            <span>{{item.subTitle}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

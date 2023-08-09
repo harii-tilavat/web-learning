@@ -1,9 +1,18 @@
 <div class="trust-by-team">
+  <div class="nug-section-title">
+    <div class="nug-desc">
+      <span>Trusted by teams big & small</span>
+    </div>
+  </div>
+  <div class="logo-list">
     <ul>
-      <li class="team-logo" *ngFor="let item of [1,2,3,4,5]">
-        <span>
-          <img [src]="'assets/images/compny-logo1.png'" alt="" class="img-fluid">
-        </span>
+      <li class="team-logo" *ngFor="let item of logoList">
+        <div class="client-image">
+          <span>
+            <img [src]="item.icon" alt="" class="img-fluid">
+          </span>
+        </div>
       </li>
     </ul>
+  </div>
 </div>

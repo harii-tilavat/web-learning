@@ -1,35 +1,34 @@
-<header class="site-header">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <div class="nug-logo">
-        <span>
-          <img src="/assets/svgs/logo-white.svg" alt="" class="img-fluid">
-        </span>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <div class="nug-logo">
+      <span>
+        <img src="/assets/svgs/logo-white.svg" alt="" class="img-fluid">
+      </span>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+      aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-content collapse navbar-collapse justify-content-center" id="navbar-content">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let item of menuList" [ngClass]="{'dropdown':item.subMenu.length!==0}">
+          <span class="nav-link" data-bs-toggle="dropdown"
+            [ngClass]="{'dropdown-toggle':item.subMenu.length!==0}">{{item.title}}</span>
+          <ul class="dropdown-menu" aria-labelledby="nugget-dropdown" *ngIf="item.subMenu.length!==0">
+            <li class="dropdown-item" *ngFor="let subItem of item.subMenu">
+              <span class="drop-down-link">{{subItem.title}}</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-buttons flex-center">
+      <div class="nug-button d-none d-md-block" >
+        <button type="button" class="btn btn-outline-main">Login</button>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
-        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-content collapse navbar-collapse justify-content-center" id="navbar-content">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item" *ngFor="let item of menuList" [ngClass]="{'dropdown':item.subMenu.length!==0}">
-            <span class="nav-link" data-bs-toggle="dropdown" [ngClass]="{'dropdown-toggle':item.subMenu.length!==0}">{{item.title}}</span>
-            <ul class="dropdown-menu" aria-labelledby="nugget-dropdown" *ngIf="item.subMenu.length!==0">
-              <li class="dropdown-item" *ngFor="let subItem of item.subMenu">
-                <span class="drop-down-link">{{subItem.title}}</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="buttons d-flex-center">
-        <div class="nug-button">
-          <button type="button" class="btn btn-outline-main">Login</button>
-        </div>
-        <div class="nug-button">
-          <button type="button" class="btn btn-main ms-3">Try it for Free</button>
-        </div>
+      <div class="nug-button">
+        <button type="button" class="btn btn-main ms-3">Try it for Free</button>
       </div>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>

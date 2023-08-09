@@ -1,1 +1,46 @@
-<p>benefits works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="nug-section-title">
+        <div class="nug-subtitle title-bold">
+          <span>Benefits</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12" *ngFor="let item of benefitList">
+          <div class="benefit-card">
+            <div class="benefit-image">
+              <div class="image nug-image-small">
+                <span>
+                  <img [src]="item.icon" alt="benefit-img" class="img-fluid">
+                </span>
+              </div>
+            </div>
+            <div class="benefit-title">
+              <span>{{item.title}}</span>
+            </div>
+            <div class="benefit-desc">
+              <span>{{item.desc}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="benefit-footer text-start text-md-center">
+        <div class="benefit-title">
+          <span>Experience these powerfull features with a free trial of Nugget No credit card required</span>
+        </div>
+        <div class="nug-button">
+          <button type="button" class="btn btn-main">Try Nugget for free</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

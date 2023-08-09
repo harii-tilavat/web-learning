@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
-import { ContentComponent } from './content/content.component';
 import { OurHelpComponent } from './our-help/our-help.component';
-import { OurClientsComponent } from './our-clients/our-clients.component';
 import { MainSectionComponent } from '../../shared/main-section/main-section.component';
+import { ProductDetail } from './product-detail/product-detail.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent }
@@ -15,8 +15,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     HomePageComponent,
-    ContentComponent,
-    OurClientsComponent,
+    ProductDetail,
+    TestimonialComponent,
     OurHelpComponent
   ],
   imports: [
